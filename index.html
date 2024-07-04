@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureChat - Web3 Chat Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-shield-alt"></i> SecureChat</h1>
+            <nav>
+                <button id="newChatBtn"><i class="fas fa-plus"></i> New Chat</button>
+                <button id="settingsBtn"><i class="fas fa-cog"></i> Settings</button>
+            </nav>
+        </header>
+        <main>
+            <aside id="sidebar">
+                <div id="userProfile">
+                    <img src="https://via.placeholder.com/50" alt="User Avatar" id="userAvatar">
+                    <span id="userName">John Doe</span>
+                </div>
+                <ul id="chatList"></ul>
+            </aside>
+            <section id="chatArea">
+                <div id="chatHeader">
+                    <button id="backButton"><i class="fas fa-arrow-left"></i></button>
+                    <img src="" alt="Chat Avatar" id="currentChatAvatar" class="chatAvatar">
+                    <h2 id="currentChatName">Welcome to SecureChat</h2>
+                </div>
+                <div id="messageArea"></div>
+                <div id="inputArea">
+                    <textarea id="messageInput" placeholder="Type your message..."></textarea>
+                    <button id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
